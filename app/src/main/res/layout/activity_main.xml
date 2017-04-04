@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gxz.mediametadataretrieverdemo.MainActivity">
+
+    <Button
+        android:id="@+id/btn_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickExtractInfo"
+        android:text="提取视频的信息"
+        />
+
+    <TextView
+        android:id="@+id/id_tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickExtractOne"
+        android:text="提取视频的第一帧图片"
+        />
+
+    <ImageView
+        android:id="@+id/id_image"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        />
+
+    <Button
+        android:id="@+id/btn_mul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickExtractMul"
+        android:text="提取视频的多张图片"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
